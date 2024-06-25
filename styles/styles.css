@@ -1,0 +1,127 @@
+@import "fonts.css";
+
+:root {
+    /*fonts*/
+    --g: 'Golos Text';
+    --m: 'Merriweather';
+    /*colors*/
+    --main: #313131;
+    --highlight: #F54932;
+    --highlight-dark: #1F1F1F;
+    --highlight-hover: #FBCE51;
+    --highlight-extra: #3057A2;
+    --extra: #595653;
+    --bg: #E9DED4;
+    --bg-2: #D9D9D9;
+}
+
+body {
+
+}
+
+.container {
+    max-width: 1220px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar {
+    margin-bottom: 37px;
+    padding: 30px  00;
+}
+
+.header__nav {
+
+}
+
+.navbar__logo {
+
+}
+
+.header__logo {
+
+}
+
+.header {
+    background: url("../images/bg-header.png") center/cover no-repeat;
+    height: 700px;
+}
+@media(max-width: 1220px) {
+    .header {
+        height: 882px;
+        background-position: 80% 0;
+    }
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__info {
+    max-width: 542px;
+    width: 100%;
+}
+
+.header__title {
+    font-family: var(--m);
+    font-size: 3.75rem;
+    line-height: 1.1em;
+    color: var(--main);
+    text-transform: uppercase;
+    text-align: left;
+
+    width: 100%;
+}
+
+.header__title-centered {
+    text-align: center;
+}
+
+.header__paragraph {
+    font-family: var(--g);
+    font-size: 1.125rem;
+    line-height: 1.3em;
+    color: var(--main);
+    text-align: center;
+    width: 100%;
+
+    margin: 24px 0 40px 0;
+}
+
+.header__buttons {
+    display: flex;
+    column-gap: 16px;
+}
+
+.header__button {
+    display: block;
+    font-family: var(--g);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.3em;
+    text-align: center;
+    max-width: 263px;
+    width: 100%;
+    padding: 20px 0;
+    color: var(--highlight-dark);
+    border: 2px solid var(--highlight-dark);
+    border-radius: 66px;
+    transition: all 0.4s ease 0s;
+}
+
+.header__button:hover {
+    color: white;
+    background: var(--highlight-dark);
+}
+
+.header__button_highlight {
+    color: white;
+    background: var(--highlight-dark);
+}
+.header__button_highlight:hover {
+    color: var(--highlight-dark);
+    background: var(--highlight-hover);
+    border: 1px solid var(--highlight-hover);
+}
