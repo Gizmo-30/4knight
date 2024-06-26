@@ -1,0 +1,27 @@
+@keyframes riseSun {
+    from { transform: translateY(100%); }
+    to { transform: translateY(0); }
+}
+
+.sun {
+    animation: riseSun 2s ease-out;
+}
+
+@keyframes riseChessPieces {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.king, .queen {
+    animation: riseChessPieces 1.5s ease-out 0.5s forwards;
+    opacity: 0;
+}
+
+@keyframes tiltPieces {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(-10deg); }
+}
+
+.knight, .pawn {
+    animation: tiltPieces 1s ease-in-out 1s forwards;
+}
