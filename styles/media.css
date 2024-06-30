@@ -1,5 +1,67 @@
+@media (hover: hover) and (pointer: fine) {
+    .header__button:hover {
+        color: white;
+        background: var(--highlight-dark);
+    }
+    .header__button_highlight:hover {
+        color: var(--highlight-dark);
+        background: var(--highlight-hover);
+        border: 1px solid var(--highlight-hover);
+    }
+}
+
+@media (hover: none) and (pointer: coarse) {
+    .header__button_regular {
+        background: white;
+        border-color: white;
+    }
+}
+
 @media(max-width: 768px) {
     .section {
         flex-direction: column;
+    }
+}
+
+@media(max-width: 600px) {
+    .header__buttons {
+        flex-direction: column;
+        width: 100%;
+        row-gap: 14px;
+    }
+    .header__button {
+        max-width: unset;
+        padding: 18px 0;
+    }
+    .header br {
+        display: none;
+    }
+    .header__title {
+        font-size: 3rem;
+    }
+}
+
+@media(max-width: 425px) {
+    .header {
+        height: 812px;
+    }
+    .header__content{
+        background: url("../images/bg-header-mobile.png") 75% no-repeat;
+    }
+
+    .header__info {
+        max-width: unset;
+    }
+    .header__title {
+        font-size: 2.25rem;
+        line-height: 1.1em;
+    }
+
+    .header__paragraph {
+        margin: 24px 0 32px 0;
+    }
+
+    .running-line {
+        height: 38px;
     }
 }

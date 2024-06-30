@@ -14,3 +14,5 @@ document.addEventListener('DOMContentLoaded', () => {
         pawn.style.animation = 'tiltPieces 1s ease-in-out forwards';
     }, 1000);
 });
+
+let brElements = document.querySelectorAll(':has(> br)')

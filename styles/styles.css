@@ -1,5 +1,4 @@
 @import "fonts.css";
-@import "media.css";
 
 :root {
     /*fonts*/
@@ -42,7 +41,8 @@ body {
 }
 
 .header__content {
-    background: url("../images/bg-header.webp") center/cover no-repeat;
+    background: url("../images/animation/header-bg.png") center/cover no-repeat;
+    width: 100%;
     display: flex;
     flex-grow: 1;
 }
@@ -59,7 +59,6 @@ body {
     color: var(--main);
     text-transform: uppercase;
     text-align: left;
-
     width: 100%;
 }
 
@@ -74,7 +73,6 @@ body {
     color: var(--main);
     text-align: center;
     width: 100%;
-
     margin: 24px 0 40px 0;
 }
 
@@ -99,19 +97,9 @@ body {
     transition: all 0.4s ease 0s;
 }
 
-.header__button:hover {
-    color: white;
-    background: var(--highlight-dark);
-}
-
 .header__button_highlight {
     color: white;
     background: var(--highlight-dark);
-}
-.header__button_highlight:hover {
-    color: var(--highlight-dark);
-    background: var(--highlight-hover);
-    border: 1px solid var(--highlight-hover);
 }
 
 /*running line*/
