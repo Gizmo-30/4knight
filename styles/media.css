@@ -21,6 +21,24 @@
     .section {
         flex-direction: column;
     }
+    .section__start {
+        width: 100%;
+    }
+    .lecture__subtitle_disabled {
+        display: block;
+    }
+    .lecture__subtitle_enabled {
+        display: none;
+    }
+    .lecture {
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+    }
+
+    .lecture__end {
+        width: 80%;
+    }
 }
 
 @media(max-width: 600px) {
@@ -36,9 +54,6 @@
     .header br {
         display: none;
     }
-    .header__title {
-        font-size: 3rem;
-    }
 }
 
 @media(max-width: 425px) {
@@ -52,10 +67,6 @@
     .header__info {
         max-width: unset;
     }
-    .header__title {
-        font-size: 2.25rem;
-        line-height: 1.1em;
-    }
 
     .header__paragraph {
         margin: 24px 0 32px 0;
@@ -67,5 +78,9 @@
     .running-line__text {
         font-size: 1rem;
         line-height: 1.1em;
+    }
+
+    .lecture__end {
+        width: 100%;
     }
 }
