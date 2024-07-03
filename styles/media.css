@@ -43,10 +43,10 @@
 
 @media(max-width: 425px) {
     .header {
-        height: 812px;
+        height: 100vh;
     }
     .header__content{
-        background: url("../images/bg-header-mobile.png") 75% no-repeat;
+        background: url("../images/bg-header-mobile.png") 75% 0/auto 105% no-repeat;
     }
 
     .header__info {
@@ -63,5 +63,9 @@
 
     .running-line {
         height: 38px;
+    }
+    .running-line__text {
+        font-size: 1rem;
+        line-height: 1.1em;
     }
 }

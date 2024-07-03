@@ -111,6 +111,8 @@ body {
     background: var(--highlight);
     padding: 18px 0;
     position: relative;
+    display: inline-flex;
+    align-items: center;
 }
 
 .running-line__list {
