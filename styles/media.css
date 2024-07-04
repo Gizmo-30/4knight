@@ -17,6 +17,21 @@
     }
 }
 
+@media(max-width: 1000px) {
+    .session {
+        flex-direction: column;
+    }
+    .session__content {
+        width: 100%;
+    }
+    .session__start {
+        width: 100%;
+    }
+    .session__start img{
+        height: 374px;
+        object-fit: cover;
+    }
+}
 @media(max-width: 768px) {
     .section {
         flex-direction: column;
@@ -51,8 +66,21 @@
         max-width: unset;
         padding: 18px 0;
     }
-    .header br {
+    br {
         display: none;
+    }
+
+    .session__row {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 2px solid var(--bg-3);
+        padding: 16px 0;
+        row-gap: 12px;
+    }
+
+    .session__column {
+        border: 0;
+        padding: 0;
     }
 }
 
@@ -82,5 +110,9 @@
 
     .lecture__end {
         width: 100%;
+    }
+
+    .session__table {
+        margin: 44px 0 40px 0;
     }
 }
